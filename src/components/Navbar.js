@@ -4,8 +4,8 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-boots
 class NavigationBar extends Component {
   render() {
     return(
-      <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar.Brand href="#home">React-Testing</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
