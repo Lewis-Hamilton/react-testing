@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import {Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 
-class Navbar extends Component{
+class NavigationBar extends Component {
   render() {
-    return (
+    return(
       <Navbar bg="light" expand="lg">
       <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -28,4 +28,5 @@ class Navbar extends Component{
     );
   }
 }
-export default Navbar;
+
+export default NavigationBar;
