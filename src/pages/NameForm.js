@@ -14,8 +14,7 @@ class NameForm extends Component {
       alert('A name was submitted: ' + this.state.value);
       event.preventDefault();
     }
-  
-    render() {
+    render (){
       return (
         <div>
             <h1>{this.state.value}</h1>
