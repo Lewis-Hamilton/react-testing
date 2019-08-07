@@ -3,13 +3,18 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './components/Navbar';
 import NameForm from './components/NameForm';
+import Home from './pages/Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-function App() {
+const App = props =>{
   return (
-    <div>
-      <NavigationBar/>
-      <NameForm/>
-    </div>
+    <Router>
+      <NavigationBar user={props.user}>
+        <Switch>
+          <Route exact path='/' component={Home} />
+        </Switch>
+      </NavigationBar>
+    </Router>
   );
 }
 
