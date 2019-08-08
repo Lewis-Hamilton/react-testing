@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './components/Navbar';
 import NameForm from './pages/NameForm';
 import Home from './pages/Home';
+import Todo from './pages/Todo';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = props =>{
@@ -12,6 +13,7 @@ const App = props =>{
       <NavigationBar user={props.user}>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/Todo' component={Todo} />
           <Route exact path='/NameForm' component={NameForm} />
         </Switch>
       </NavigationBar>

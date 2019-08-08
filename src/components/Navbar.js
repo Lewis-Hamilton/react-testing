@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import { withRouter } from 'react-router';
-import { thisExpression } from '@babel/types';
 
 class NavigationBar extends Component {
   constructor(props) {
@@ -22,7 +21,7 @@ class NavigationBar extends Component {
           <Nav className="mr-auto">
             
             <Nav.Link onClick={() => this.handleRoutes('/')}>Home</Nav.Link>
-            <Nav.Link onClick={() => this.handleRoutes('/')}>Link</Nav.Link>
+            <Nav.Link onClick={() => this.handleRoutes('/Todo')}>Todo</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item onClick={() => this.handleRoutes('/NameForm')}>NameForm</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
