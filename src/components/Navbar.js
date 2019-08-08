@@ -24,7 +24,7 @@ class NavigationBar extends Component {
             <Nav.Link onClick={() => this.handleRoutes('/Todo')}>Todo</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item onClick={() => this.handleRoutes('/NameForm')}>NameForm</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => this.handleRoutes('/TodoItem')}>TodoTest</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
