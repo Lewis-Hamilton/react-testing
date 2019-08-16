@@ -4,7 +4,7 @@ class TodoList extends Component {
     render (){
       return (
         <div>
-            <h1>Hello</h1>
+            <h1>Hello from the todo list component</h1>
         </div>
       );
     }
